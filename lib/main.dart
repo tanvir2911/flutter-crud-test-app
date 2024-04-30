@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:test_app/firebase_options.dart';
-import 'package:test_app/home1.dart';
+import 'package:test_app/home2.dart';
 import 'package:test_app/loginScreen.dart';
 import 'package:test_app/registration.dart';
 
@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
             // primarySwatch: Colors.blue,
             colorScheme: ColorScheme.fromSeed(
                 seedColor: Color.fromARGB(252, 98, 218, 1))),
-        initialRoute: "/myHome",
+        initialRoute: "/login",
         routes: {
-          "/myHome": (context) => MyHomePage(),
+          "/myHome": (context) => FurnitureMain(),
           "/login": (context) => LoginScreen(),
           "/registration": (context) => Registration(
                 title: "Registration Page",
@@ -34,6 +34,6 @@ class MyApp extends StatelessWidget {
         darkTheme: ThemeData(primarySwatch: Colors.cyan),
         debugShowCheckedModeBanner: false,
         // home: MyHome());
-        home: const MyHomePage());
+        home: const FurnitureMain());
   }
 }
