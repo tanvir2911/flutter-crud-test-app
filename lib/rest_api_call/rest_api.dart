@@ -30,6 +30,16 @@ class _RestApiState extends State<RestApi> {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+        body: TextButton(
+      child: Container(
+        child: Text("fjadfl"),
+      ),
+      onPressed: () {
+        print("----------");
+        getData(context);
+        print("----------");
+      },
+    ));
   }
 }
